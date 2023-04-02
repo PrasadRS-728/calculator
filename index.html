@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
-<body>
+<body onload="main()">
   <div id="screen">
     <div id="notification">
       <div class="time">9.41</div>
@@ -16,30 +16,30 @@
     </div>
 
     <div id="display">
-      <div class="result">1498.5</div>
-      <div class="operation">99+99/2</div>
+      <div class="result"></div>
+      <div class="operation"></div>
     </div>
-    
+
     <div id="button-container">
-      <button class="btn">AC</button>
+      <button class="btn active" data-key="clear">AC</button>
       <button class="btn">+/-</button>
       <button class="btn">%</button>
-      <button class="btn" data-key="/">/</button>
-      <button class="btn" data-key="7">7</button>
-      <button class="btn" data-key="8">8</button>
-      <button class="btn" data-key="9">9</button>
-      <button class="btn" data-key="*">*</button>
-      <button class="btn" data-key="4">4</button>
-      <button class="btn" data-key="5">5</button>
-      <button class="btn" data-key="6">6</button>
-      <button class="btn" data-key="-">-</button>
-      <button class="btn" data-key="1">1</button>
-      <button class="btn" data-key="2">2</button>
-      <button class="btn" data-key="3">3</button>
-      <button class="btn" data-key="+">+</button>
-      <button class="btn zero" data-key="0">0</button>
-      <button class="btn">.</button>
-      <button class="btn" data-key="=">=</button>
+      <button class="btn active colored" data-key="/">÷</button>
+      <button class="btn active" data-key="7">7</button>
+      <button class="btn active" data-key="8">8</button>
+      <button class="btn active" data-key="9">9</button>
+      <button class="btn active colored" data-key="*">*</button>
+      <button class="btn active" data-key="4">4</button>
+      <button class="btn active" data-key="5">5</button>
+      <button class="btn active" data-key="6">6</button>
+      <button class="btn active colored" data-key="-">-</button>
+      <button class="btn active" data-key="1">1</button>
+      <button class="btn active" data-key="2">2</button>
+      <button class="btn active" data-key="3">3</button>
+      <button class="btn active colored" data-key="+">+</button>
+      <button class="btn active zero" data-key="0">0</button>
+      <button class="btn active" data-key=".">.</button>
+      <button class="btn active colored" data-key="=">=</button>
     </div>
     
     <div id="footer">

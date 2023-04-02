@@ -104,3 +104,7 @@
   padding-left: 15px;
   font-size: 25px;
 }
+
+.colored {
+  background-color: orange;
+}
